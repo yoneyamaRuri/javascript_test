@@ -2,30 +2,26 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="css/common.css">
-
-  <title>practice01</title>
+  <link rel="stylesheet" href="css/main.css">
+  <title>jQueryの練習</title>
 </head>
-<body>
-
-<h1>WEBページの練習</h1>
-<div class="form">
-  <input type="text" id="name">
-  <button>click!</button>
-</div>
-<div class="form">
-  <input type="text" id="name">
-  <button>click!</button>
-</div>
-<div class="form">
-  <input type="text" id="name">
-  <button>click!</button>
-</div>
-<div class="form">
-  <input type="text" id="name">
-  <button>click!</button>
-</div>
+  <div id="q46_box">
+      <label>オペランドＡ</label>
+          <input id="q46_val" type="text" size="3" width="50" />
+      <label>オペランドＢ</label>
+      <input id="q46_subject" type="text" size="3" width="50" />
+      <select id="q46_select">
+          <option value="addition" >足し算</option>
+          <option value="subtraction" >引き算</option>
+          <option value="multiplication" >掛け算</option>
+          <option value="division" >割り算</option>
+      </select>
+      <input id="q46_button" type="button" value="計算" />
+        <button id="q46_btn" value="クリア">クリア</button>
+      <p id="q46_answer"></p>
+  </div>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="js/my-sample.js"></script>
+  <script src="js/text.js"></script>
+
 </body>
 </html>
