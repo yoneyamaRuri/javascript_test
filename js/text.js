@@ -12,13 +12,9 @@
 
   //4.btn_4をクリックしたらid="result"に対して点滅するように記述
   //追加:"id="resultの下に文字を追加する
-  $("#btn_4").click(function(){
-    setTimeout(function() {
-    $('#result').fadeOut('slow', function() {
-      $(this).fadeIn('slow');
-      $(this).text('Now Loading...');
-    });
-  }, 2000);
+  $("#btn_4").on("click", function(){
+     $("#result").fadeOut(1000).fadeIn(1000);
+     $("#result").append("<div>Now Loading...</div>");
   });
 
   //5.btn_5をクリックするとliの文字を赤とフォントを10px
@@ -28,8 +24,8 @@
 
   //6.btn_6をクリックするとliの四角を角丸に変更
   //※あとで答え確認する
-  $("#btn_6").click(function(){
-    $('#menu li').addClass('changed');
+  $("#btn_6").on("click", function(){
+    $('li').css("border-radius","10px");
   });
 
   //7.btn_7をクリックするとliの背景をskyblueに変更
@@ -40,7 +36,7 @@
   //8.btn_8をクリックするとliの背景をgrayにし、クリックをoffにする
   $("#btn_8").click(function(){
     $("li").css('background', 'gray');
-    $("#btn_8").replaceWith('<div>背景をgrayにし、クリックをoff</div>');
+    $("#btn_8").off("click");
   });
 
 })();
