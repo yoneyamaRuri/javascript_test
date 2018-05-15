@@ -1,5 +1,8 @@
 (function(){
-
+  $("#q49 li").eq(2).cluck(function(){
+    setTimeout(function(){
+      $("#q49").eq(2).replaceWith('<li>『リンクは偽物(フェイク)★-_-；』</li>');
+    } );
+    return false;
+  });
 })();
-// id名「q49」のul要素のリストの３番目がクリックされた２秒後に
-// 対象リストを『リンクは偽物(フェイク)★-_-；』に置き換えなさい
