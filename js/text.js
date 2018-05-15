@@ -15,7 +15,7 @@
           break;
       }
   });
-      console.log(val + subject);
+      console.log(q46_answer);
   function funcAddition(val,subject){
         var answer = (val + subject);
         $("p#q46_answer").append(answer);
