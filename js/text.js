@@ -1,6 +1,6 @@
 (function(){
-
-  })();
-
-//id名「q47」要素にある”ID”のついたdiv要素だけを配列に代入し、
-//そのid名を取得しclass名「q47」のp要素に出力せよ
+    var aaa = $("#q47").find("div").map(function() {
+        return $(this).attr("id");
+    }).get();
+    $(".q47").text( aaa );
+})();
